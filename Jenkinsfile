@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh "echo 'Hello World 1'"
 		sh "ls -al"
-		sh '\\"C:/Program Files/Java/jdk1.8.0_191/bin/javac.exe\\" HelloWorld.java'
+		sh "whoami"
             }
         }
         stage('--test--') {
@@ -22,4 +22,3 @@ pipeline {
         }
     }
 }
-sh 'echo \\"$BUILD_NUMBER\\"' 
