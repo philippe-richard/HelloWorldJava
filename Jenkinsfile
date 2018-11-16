@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh "echo 'Hello World 1'"
 		sh "ls -al"
-		bat "\\"C:/Program Files/Java/jdk1.8.0_191/bin/javac.exe\\" HelloWorld.java"
+		sh "\\"C:/Program Files/Java/jdk1.8.0_191/bin/javac.exe\\" HelloWorld.java"
             }
         }
         stage('--test--') {
